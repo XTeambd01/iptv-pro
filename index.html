@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>IPTV</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <div id="header">IPTV</div>
+
+    <!-- 1. HOME VIEW (Channel List) -->
+    <div id="home-view" class="view-section active">
+        <div id="channel-list"></div>
+    </div>
+
+    <!-- 2. MENU VIEW -->
+    <div id="menu-view" class="view-section">
+        <div class="list-item focusable" data-action="search">
+            <div class="text-container"><span class="truncate">Search Channel</span></div>
+        </div>
+        <div class="list-item focusable" data-action="network">
+            <div class="text-container"><span class="truncate">Network Stream</span></div>
+        </div>
+        <div class="list-item focusable" data-action="upload">
+            <div class="text-container"><span class="truncate">Load Playlist</span></div>
+        </div>
+        <div class="list-item focusable" data-action="toggle-view">
+            <div class="text-container"><span class="truncate">Toggle View (List/Grid)</span></div>
+        </div>
+        <div class="list-item focusable" data-action="reset">
+            <div class="text-container"><span class="truncate">Reset Defaults</span></div>
+        </div>
+        <div class="list-item focusable" data-action="about">
+            <div class="text-container"><span class="truncate">About</span></div>
+        </div>
+    </div>
+
+    <!-- 3. SEARCH VIEW -->
+    <div id="search-view" class="view-section">
+        <input type="text" id="search-input" class="input-box focusable" placeholder="Search...">
+        <div id="search-results"></div>
+    </div>
+
+    <!-- 4. NETWORK VIEW -->
+    <div id="network-view" class="view-section">
+        <div style="font-size: var(--font-sm); margin-bottom: 5px;">Enter URL (m3u8/mp4):</div>
+        <input type="text" id="net-url" class="input-box focusable" placeholder="http://...">
+        <div class="list-item focusable" id="net-play-btn" style="justify-content: center;">
+            <span class="truncate">Play Stream</span>
+        </div>
+    </div>
+
+    <!-- 5. PLAYER VIEW -->
+    <div id="player-view">
+        <video id="video-player" playsinline></video>
+    </div>
+
+    <!-- Modal Alert -->
+    <div id="modal-overlay">
+        <div class="modal-box" id="modal-box">
+            <div class="modal-title">Notice</div>
+            <div class="modal-msg" id="modal-msg"></div>
+        </div>
+    </div>
+
+    <input type="file" id="file-upload" accept=".m3u,.txt">
+
+    <!-- Softkeys -->
+    <div id="softkeys">
+        <div class="sk-btn sk-left" id="sk-lsk"></div>
+        <div class="sk-btn sk-center" id="sk-csk"></div>
+        <div class="sk-btn sk-right" id="sk-rsk"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
