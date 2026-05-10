@@ -1,5 +1,5 @@
 // Replace with your actual .m3u link
-var PLAYLIST_URL = "https://raw.githubusercontent.com/sanyahmed07/playlist1/refs/heads/main/playlist.m3u";
+var PLAYLIST_URL = "https://raw.githubusercontent.com/XTeambd01/playlistm3u/refs/heads/main/playlist.m3u8";
 
 // --- DATA ---
 const ICONS = {
