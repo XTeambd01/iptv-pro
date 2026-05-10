@@ -195,7 +195,7 @@ function handleCenter() {
             localStorage.setItem('iptv_view_mode', viewMode);
             window.location.reload();
         } else if (action === 'about') {
-            openModal("IPTV Pro\nCloud Phone Edition v1.0", null);
+            openModal("IPTV Pro by Sany Ahmed raaz\nCloud Phone Edition v1.0", null);
             setSoftkeys("", "OK", "");
         }
     } else if (currentView === 'search') {
