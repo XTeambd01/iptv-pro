@@ -198,7 +198,7 @@ function handleCenter() {
             localStorage.setItem('iptv_view_mode', viewMode);
             location.reload();
         } else if (action === 'about') {
-            openModal("IPTV Pro\nCloud Phone Edition v1.0\nCode: A.I. Shifat \nPlaylist: Sany Ahmed Raj", null);
+            openModal("IPTV Pro\nCloud Phone Version1.0 \n2025-2026  \nCode: Shifat100 & Sany Ahmed Raaz", null);
             setSoftkeys("", "OK", "");
         }
     } else if (currentView === 'search') {
